@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
+
+
+
+body{
+  background-image: url(../imagens/fundorosa.png);
+  background-color: rgb(252, 195, 225);
+
+}
+@media print{
+    label{
+        display: block;
+    }
+}
+ @media print{
+
+    .login-box{
+        display: none;
+    }
+} 
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(245, 160, 186, 0.987);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2px 0;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #000000;
+    font-size: 15px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+   
+font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+
+  /*Botão*/
+
+  .btn {
+    padding: 1rem 1rem;
+    font-weight: 500;
+    background: rgb(255, 255, 255);
+    color: blueviolet;
+    border-radius: .5rem;
+    border-bottom: 2px solid rgb(187, 17, 116);
+    border-right: 2px solid rgb(187, 17, 116);
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transition-duration: 1s;
+    transition-property: border-top, 
+       border-left, 
+       border-bottom,
+       border-right,
+       box-shadow;
+   }
+   
+   .btn:hover {
+    border-top: 2px solid blueviolet;
+    border-left: 2px solid blueviolet;
+    border-bottom: 2px solid rgb(238, 103, 238);
+    border-right: 2px solid rgb(238, 103, 238);
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+   }
+
+
+
+
+   /*Header começo*/
+
+ .a{
+
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+padding-top: 2%;
+padding-left: 12%;
+font-size: 30px;
+color: rgb(0, 0, 0);
+  
+  
+ }
+ .a:hover{
+  transition-duration: 1s;
+  color: blueviolet;
+  border-bottom: 2px solid rgb(238, 103, 238);
+  border-right: 2px solid rgb(238, 103, 238);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 8px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+ }
+
+ .h{
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: right;
+  width: 90%;
+  
+ }
+
+
+   
+   /*Header fim*/
+
+
+   @media print{
+
+    .h{
+        display: none;
+    }
+} 
+  
+
+  /*Fim  da página Home*/
+
+
+
+.bodyFlores{
+  background-image: url(../imagens/fundorosa.png);
+  background-repeat: none;
+ 
+}
+
+
+
+
+
+
+
+
+
+ .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+
+}
+
+.card {
+  margin: 2%;
+  background: rgba(245, 160, 186, 0.987);
+  width: 400px;
+  height: 330px;
+  box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  transition: .2s all;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  font-size: 13px;
+  padding-top: 30px;
+}
+
+.card > span {
+  display: block;
+  margin: auto;
+  max-width: 40px;
+}
+
+.container:hover .card {
+  filter: blur(3px);
+  opacity: .5;
+  transform: scale(.98);
+  box-shadow: none;
+}
+
+.container:hover .card:hover {
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1;
+  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+  background: rgb(238, 103, 238);
+  color: white;
+}
+
+
+
+
+.textos{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-left: 12%;
+
+
+}
+
+.txt1{
+ margin: 7%;
+ text-align: center;
+
+}
+.txt2{
+  margin: 7%;
+  text-align: center;
+ 
+}
+.txt3{
+  margin: 7%;
+  text-align: center;
+ 
+}
+
+
+h2{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 30px;
+ color: rgb(0, 0, 0);
+}
+p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+
+
+@media (max-width: 1000px){
+  .h {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+
+  a{
+    text-align: center;
+    font-size: 20px;
+  
+  }
+  .container{
+    display: none;
+  }
+  .textos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0;
+
+   
+   
+  }
+  .txt1{
+    text-align: left;
+    
+  }
+  .txt2{
+    text-align: left;
+  }
+  .txt3{
+    text-align: left;
+  }
+  p{
+    font-size: 20px;
+    
+  }
+  h2{
+    font-size: 22px;
+  }
+  .textos{
+    margin-bottom: 0px;
+  }
+  .login-box{
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 300px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(245, 160, 186, 0.987);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+
+  }
+
+}
+
+
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+
+
+
+.logoo{
+  width: 6%;
+  margin-top: 2%;
+}
+
+#menu {
+  margin-top: 6%;
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  
+}
+
+#menu a {
+  
+  display: block;
+  padding: 2.0rem;
+  color: #df9e1d;
+  text-decoration: none;
+  font-family: 'Antonio', sans-serif;
+  font-size: 35px;
+
+  
+}
+
+#menu a:hover{
+
+  transition: 1s;
+  color: #ffffff;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #f7e7d1;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+    
+  }
+
+  #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+  }
+
+  #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+      color: #332915;
+   
+  }
+
+  #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+  }
+
+  #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+  }
+
+  #nav.active #hamburger {
+      border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+      transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+  }
+  .logoo{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

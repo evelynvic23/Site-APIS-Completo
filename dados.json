@@ -1,0 +1,24 @@
+{
+
+    "pop2": {
+    "name": "Rihanna",
+    "album": "Talk That Talk",
+    "style": "Pop",
+    "price": "R$ 90,90",
+    "image": "<img src='imagens/ri.png'  width= '300px'  height= '300px'>"
+    },
+    "pop": {
+    "name": "Taylor Swift",
+    "album": "Lover",
+    "style": "Pop",
+    "price": "R$ 100,90",
+    "image": "<img src='imagens/taylor.jpg'  width= '300px'  height= '300px'>"
+        },
+    "gospel": {
+    "name": "Gabriela Rocha",
+    "album": "Até transbordar",
+    "style": "Gospel",
+    "price": "R$ 150,90",
+    "image": "<img src='imagens/gospel.jpg' width= '300px'  height= '300px'>"
+            }
+}

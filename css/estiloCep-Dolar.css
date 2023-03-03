@@ -1,0 +1,674 @@
+
+
+/*Importando fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
+* {
+    margin: 0%;
+    padding: none;
+
+}
+.logo{
+
+  
+
+  width: 14%;
+
+ margin-left: -50%;
+}
+.menuCompleto{
+
+  font-size: 30px;
+  text-align: center;
+  margin: 4%;
+}
+.aa{
+  font-size: 35px;
+  text-decoration: none;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  margin: 3%;
+  color: #ecebec;
+}
+.aa:hover{
+
+  color: #d83810;
+
+}
+@media (max-width:490px){
+
+
+   .api{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    
+  }
+  .flip-card{
+
+    background-color: transparent;
+  width: 200px;
+  height: 207px;
+  perspective: 1000px;
+  font-family: sans-serif;
+
+    
+  }
+  .title{
+
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  .linha{
+
+    width: 100%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: rgb(117, 67, 20);
+    box-shadow: 30px 6px 9px rgb(252, 247, 247);
+    
+  }
+  .titulo{
+
+    margin-top: 9%;
+    font-family: 'Voltaire', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: azure;
+
+  }
+  .historiaCep{
+
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 27px;
+    text-align: center;
+    color: azure;
+    text-align: justify;
+    padding: 5%;
+
+  }
+  .historiaCep{
+
+    font-family: 'Voltaire', sans-serif;
+    font-size: 23px;
+    text-align: center;
+    color: azure;
+    text-align: justify;
+
+   
+    
+  }
+  .tipos{
+
+    font-family: 'Antonio', sans-serif;
+    font-size: 29px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-right: 10%;
+    
+  }
+  .apiTexto{
+    color: rgb(255, 255, 255);
+    font-size: 29px;
+    font-family: 'Voltaire', sans-serif;
+    text-align: justify;
+   
+  }
+  .exemplo{
+
+    margin-right: 15%;
+      
+    }
+    .e{
+      margin-top: -30%;
+    }
+    .linha2{
+
+      width: 100%;
+      height: 2px;
+      margin: 0 auto;
+      background-color: rgb(117, 67, 20);
+      box-shadow: 30px 6px 9px rgb(252, 247, 247);
+      
+    }
+    .div2{
+      display: flex;
+      flex-direction: column;
+      margin-left: 10%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo2{
+  width: 120%;
+}
+
+/*Início página Home*/
+.bodyHome{
+    background-image: url(../imagens/fundoc.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+   
+}
+
+/* Começo Header */
+
+
+
+
+
+/* Header css */
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+
+
+
+.logoo{
+  width: 6%;
+  margin-top: 2%;
+}
+
+#menu {
+  margin-top: 6%;
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  
+}
+
+#menu a {
+  
+  display: block;
+  padding: 2.0rem;
+  color: #ffc550;
+  text-decoration: none;
+  font-family: 'Antonio', sans-serif;
+  font-size: 35px;
+
+  
+}
+
+#menu a:hover{
+
+  transition: 1s;
+  color: #ffffff;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #f7e7d1;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+    
+  }
+
+  #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+  }
+
+  #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+      color: #332915;
+   
+  }
+
+  #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+  }
+
+  #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+  }
+
+  #nav.active #hamburger {
+      border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+      transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+  }
+  .logoo{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fim Header */
+
+
+/*Começo main*/
+
+.api{
+    display: flex;
+    justify-content: center;
+    margin-top: 13%;
+
+}
+.aqui{
+  text-decoration: none;
+  font-family: 'Antonio', sans-serif;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+.aqui:hover{
+  color: #ff0000;
+}
+
+.texto{
+  color: rgb(252, 249, 249);
+  font-size: 37px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+
+  text-align: left;
+
+}
+.div2{
+  margin-top: 12%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+a{
+  text-decoration: none;
+  color: #fffffff3;
+  font-family: 'Antonio', sans-serif;
+  font-size: 17px;
+}
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 190px;
+  height: 254px;
+  perspective: 1000px;
+  font-family: sans-serif;
+  margin: 50px;
+ 
+}
+
+
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+.flip-card-inner {
+  
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background: linear-gradient(120deg, rgba(160, 104, 32, 0.795) 40%, rgba(71, 42, 3, 0.74) 88%,
+     rgba(59, 22, 3, 0.438) 40%, rgba(179, 179, 179, 0.342) 48%);
+  color: rgb(0, 0, 0);
+}
+
+.flip-card-back {
+  background: linear-gradient(120deg, rgba(85, 81, 76, 0.795) 40%, rgba(165, 107, 32, 0.74) 88%,
+  rgba(59, 22, 3, 0.438) 40%, rgba(0, 0, 0, 0.438) 48%);
+color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+}
+.linha{
+  width: 80%;
+  height: 2px;
+  margin: 0 auto;
+  background-color: rgb(117, 67, 20);
+  margin-top: 7%;
+  box-shadow: 30px 6px 9px rgb(252, 247, 247);
+}
+
+   
+
+
+
+  /*Fim main*/
+
+  /*Fim página Home*/
+
+
+
+
+
+
+
+  /*Começo página CEP*/
+
+  .bodyCep{
+    background-image: url(../imagens/fundo2.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+  }
+
+  .inputCep1{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ffa052a1;
+    width: 100%;
+    font-family: 'Voltaire', sans-serif;
+    font-size: 30px;
+    background: none;
+
+  }
+
+  .inputCep1:focus{
+
+    transition: 2s;
+    border-bottom: 2px solid #c1d603d3;;
+  }
+
+
+.inputCep{
+  border: none;
+  outline: none;
+    border-bottom: 2px solid #ffa052a1;
+    width: 100%;
+    font-family: 'Voltaire', sans-serif;
+    font-size: 30px;
+    background: none;
+}
+
+.inputCep:focus{
+
+  transition: 2s;
+  border-bottom: 2px solid #c1d603d3;;
+}
+.tamanhoCep{
+  width: 70%;
+
+}
+
+
+.labelCep{ 
+  font-family: 'Voltaire', sans-serif;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+
+}
+.formCep{
+  display: flex;
+  justify-content: center;
+
+  
+}
+.titulo{
+  margin-top: 2%;
+  font-family: 'Voltaire', sans-serif;
+  font-size: 35px;
+  text-align: center;
+  color: azure;
+}
+
+.historiaCep{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 27px;
+  text-align: center;
+  color: azure;
+  text-align: justify;
+}
+
+
+
+
+
+
+/*Fim página CEP*/
+
+
+
+/*Começo página Dolar*/
+
+/*Começo Header */
+
+.bodyDolar{
+  background-image: url(../imagens/fundo4.jpg);
+
+  background-repeat: repeat;
+  background-size: auto;
+ 
+}
+#moeda{
+
+  font-size: 30px;
+}
+.dolar{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 32px;
+  color: azure;
+  text-align: justify;
+  padding-top: 16%;
+}
+
+.tipos{
+  font-family: 'Antonio', sans-serif;
+  font-size: 29px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-left: 10%;
+ 
+}
+
+
+
+#dolar {
+  padding: 12px;
+  border-radius: 10px;
+  background-color: rgba(226, 226, 226, 0.596);
+  
+  font-size: 30px;
+  font-family: 'Voltaire', sans-serif;
+  text-align: center;
+ }
+ 
+ #dolar:focus {
+  outline-color: rgb(54, 54, 53);
+  background-color: #212121;
+  color: #e8e8e8;
+  box-shadow: 5px 5px #888888;
+ }
+ #alto {
+  padding: 12px;
+  border-radius: 10px;
+  background-color: rgba(226, 226, 226, 0.596);
+  
+  font-size: 30px;
+  font-family: 'Voltaire', sans-serif;
+  text-align: center;
+ }
+ 
+ #alto:focus {
+  outline-color: rgb(54, 54, 53);
+  background-color: #212121;
+  color: #e8e8e8;
+  box-shadow: 5px 5px #888888;
+ }
+ #baixo {
+  padding: 12px;
+  border-radius: 10px;
+  background-color: rgba(226, 226, 226, 0.596);
+  
+  font-size: 30px;
+  font-family: 'Voltaire', sans-serif;
+  text-align: center;
+ }
+ 
+ #baixo:focus {
+  outline-color: rgb(54, 54, 53);
+  background-color: #212121;
+  color: #e8e8e8;
+  box-shadow: 5px 5px #888888;
+ }
+
+
+
+/* Fim header */
+
+
+
+/*Fim página Dolar*/
+
+/*Começo Api*/
+
+
+.bodyApi{
+  background-image: url(../imagens/fundo5.jpg);
+  
+
+  background-repeat: repeat;
+  background-size: auto;
+ 
+}
+.apiTexto{
+
+  margin-top: 24%;
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  font-family: 'Voltaire', sans-serif;
+  text-align: justify;
+
+}
+
+.e{
+  width: 110%;
+}
+.exemplo{
+  margin-top: 32%;
+  margin-left: 7%;
+}
+
+
+
+.linha2{
+  width: 80%;
+  height: 2px;
+  margin: 0 auto;
+  background-color: rgb(221, 0, 0);
+  margin-top: 7%;
+  box-shadow: 30px 6px 9px rgb(252, 247, 247);
+}
+
+
+/*Fim fim Api*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

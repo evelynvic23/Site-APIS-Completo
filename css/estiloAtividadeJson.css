@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Voltaire&display=swap');
+
+body{
+    margin: 0 auto;
+   
+    
+    background: rgb(37,37,37);
+background: linear-gradient(90deg, rgba(37,37,37,1) 1%, rgba(187,187,209,1) 48%, rgba(77,77,77,1) 100%);
+background-repeat: none;
+}
+
+
+.t{
+  
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 3%;
+    color: #fff;
+
+}
+
+div{
+    color: rgb(7, 46, 46);
+    font-size: 30px;
+}
+
+
+
+.b {
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.2em;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
+  }
+  
+  .b span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #212121;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+  }
+  
+  .b span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+  }
+  
+  .b span:not(hover) {
+    transition: all 1s;
+  }
+  .completa{
+    /* border: 2px solid black; */
+    text-align: left;
+    margin-left: 30%;
+   
+    
+  }
+  
+
+  .botao{
+    /* border: 2px solid black; */
+    margin-left: 15%;
+   
+  
+  }
+
+  .tudo{
+    /* border: 2px solid rgb(226, 71, 71); */
+    display: flex;
+    text-align: center;
+
+  }
+.texto{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+
+}
+
+.b{
+    margin: 10%;
+}
+
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Ruda', sans-serif;
+    font-size: 40px;
+    margin-top: 7%;
+    
+}
+
+
+.containerInput {
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 0 4px 0;
+    z-index: 1;
+    font-size: 15px;
+  }
+  
+  .containerInput::before {
+    content: '';
+    width: 110%;
+    aspect-ratio: 1;
+    position: absolute;
+    inset: 0 0 0 0;
+    margin: auto;
+    animation: rotate6234 2.5s ease-in-out infinite;
+    z-index: -1;
+    background-image: conic-gradient(from 0deg at 50% 50%, #073AFF00 0%, rgb(252, 244, 244) 25%, #073AFF00 25%);
+  }
+  
+  .containerInput > input {
+    width: 210px;
+    height: 50px;
+    font-size: inherit;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    background-color: #0a0a0a;
+    outline: 5px solid #0a0a0a;
+  }
+  
+  .containerInput > input:focus {
+    outline: none;
+  }
+  
+  .containerInput > input:not(:placeholder-shown) {
+    outline: none;
+  }
+  
+  .containerInput > input:not(:placeholder-shown):valid {
+    outline: 4px solid rgb(0, 255, 183);
+    border-radius: 0;
+  }
+  
+  @keyframes rotate6234 {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  .m{
+    margin: 4%;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+
+  }
+
+
+  @media (max-width:700px){
+
+    .t{
+  
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      margin: 3%;
+      color: #fff;
+      font-size: 20px;
+  
+    }
+    
+  .completa{
+
+    text-align: left;
+    margin-left: 1%;
+
+  }
+  .botao{
+  
+    margin-left: 6%;
+
+  }
+  .texto{
+
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+
+  }
+  .b{
+
+    margin-bottom: 20%;
+   
+     }
+     .containerInput{
+  
+      margin: 5%;
+           background-color: #000;
+           position: relative;
+           overflow: hidden;
+           margin: 0;
+           padding: 0 0 4px 0;
+           z-index: 1;
+           font-size: 15px;
+       
+         }
+         .m{
+  
+          display: none;
+       
+         }
+         body{
+          margin: 0 auto;
+        
+      /* background: linear-gradient(90deg, rgba(37,37,37,1) 1%, rgba(187,187,209,1) 48%, rgba(77,77,77,1) 100%);
+      background-repeat: none; */
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Header css */
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+
+
+
+.logoo{
+  width: 6%;
+  margin-top: 2%;
+}
+
+#menu {
+  margin-top: 6%;
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  
+}
+
+#menu a {
+  
+  display: block;
+  padding: 2.0rem;
+  color: #ffc550;
+  text-decoration: none;
+  font-family: 'Antonio', sans-serif;
+  font-size: 35px;
+
+  
+}
+
+#menu a:hover{
+
+  transition: 1s;
+  color: #ffffff;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: #f7e7d1;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+    
+  }
+
+  #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+  }
+
+  #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+      color: #332915;
+   
+  }
+
+  #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+  }
+
+  #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+  }
+
+  #nav.active #hamburger {
+      border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+      transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+  }
+  .logoo{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

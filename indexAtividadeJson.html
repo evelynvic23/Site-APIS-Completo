@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="css/estiloAtividadeJson.css">
+</head>
+<body>  
+
+
+    <header id="header">
+        <img 
+        class="logoo"
+          src="imagens/logo2.png"
+  
+        />
+        <nav id="nav">
+          <button
+            aria-label="Abrir Menu"
+            id="btn-mobile"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            Menu
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li> <a href="index.html" data-menu="HOME"> HOME</a></li>
+            <li> <a href="cep.html" data-menu="CEP">CEP-DÓLAR</a></li>
+            <li> <a href="indexAtividadeJson.html">API-FAKE</a></li>
+            <li> <a href="indexApiJson.html">API-JSON</a></li>
+            <li>   <a href="indexFormulario.html">API-FORM</a></li>
+            <li> <a href="indexClima.html">API-CLIMA</a></li>
+          </ul>
+        </nav>
+      </header>
+
+ 
+
+        <h1>API Jogadores do Corinthians</h1>
+
+
+  
+
+    <main>
+
+
+        <div class="t">
+
+
+            Clique em cada botão e fique sabendo um pouco mais sobre os grandes jogadores do <br>
+            <center>Sport Club Corinthians Paulista:</center>
+
+        </div>
+    
+   
+
+<div class="tudo">
+
+
+
+    <div class="botao">
+
+    
+    <button class="b" onclick="myfunction()"><span>Jogador 1</span> </button>
+
+    <br>
+    <br>
+
+    <button class="b" onclick="myfunction2()"><span>Jogador 2</span></button>
+
+    <br>
+    <br>
+
+    <button class="b" onclick="myfunction3()"><span>Jogador 3</span></button>
+
+    <br>
+    <br>
+
+    <button class="b" onclick="myfunction4()"><span>Jogador 4</span></button>
+
+    <br>
+    <br>
+
+    <button class="b" onclick="myfunction5()"><span>Jogador 5</span></button>
+
+    <br>
+    <br>
+
+    <button class="b" onclick="myfunction6()"><span>Jogador 6</span></button>
+
+    <br><br>
+
+    <div class="containerInput">
+       
+        <input type="button" value="Atualizar" id="atualiza" onclick="window.location.reload()">
+    </div>
+
+    
+
+</div>
+
+    <div class="completa">
+
+   
+
+    <div id="nome" class="texto">
+
+    </div>
+
+    <div id="idade" class="texto">
+
+    </div>
+
+    <div id="profissao" class="texto">
+
+    </div>
+
+<br>
+
+    <div id="nome2" class="texto">
+
+    </div>
+
+    <div id="idade2" class="texto">
+
+    </div>
+
+    <div id="profissao2" class="texto">
+
+    </div>
+
+    <br>
+
+    <div id="nome3" class="texto">
+
+    </div>
+
+    <div id="idade3" class="texto">
+
+    </div>
+
+    <div id="profissao3" class="texto">
+
+    </div>
+
+    <br>
+
+    <div id="nome4" class="texto">
+
+    </div>
+
+    <div id="idade4" class="texto">
+
+    </div>
+
+    <div id="profissao4" class="texto">
+
+    </div>
+
+    <br>
+    
+
+    <div id="nome5" class="texto">
+
+    </div>
+
+    <div id="idade5" class="texto">
+
+    </div>
+
+    <div id="profissao5" class="texto">
+
+    </div>
+
+    <br>
+
+
+    <div id="nome6" class="texto">
+
+    </div>
+
+    <div id="idade6" class="texto">
+
+    </div>
+
+    <div id="profissao6" class="texto">
+
+    </div>
+
+    
+</div>
+
+ 
+</div>
+    
+</main>
+
+<footer>
+    <marquee class="m" behavior="" direction=""> Desenvolvido por: Evelyn Victoria da Silva Santos</marquee>
+</footer>
+
+
+
+
+
+    <script src="script/scriptAtividadeJson.js">
+
+    </script>
+
+
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+      
+      function toggleMenu(event) {
+         if (event.type === 'touchstart') event.preventDefault();
+         const nav = document.getElementById('nav');
+         nav.classList.toggle('active');
+         const active = nav.classList.contains('active');
+         event.currentTarget.setAttribute('aria-expanded', active);
+         if (active) {
+            event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+         } else {
+            event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+         }
+      }
+      
+      btnMobile.addEventListener('click', toggleMenu);
+       btnMobile.addEventListener('touchstart', toggleMenu);
+      </script>
+    
+</body>
+</html>

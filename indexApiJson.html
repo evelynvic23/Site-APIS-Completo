@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce - API</title>
+    <link rel="stylesheet" href="css/estiloApiJson.css">
+</head>
+<body>
+
+
+    <header id="header">
+        <img 
+        class="logoo"
+          src="imagens/logo2.png"
+  
+        />
+        <nav id="nav">
+          <button
+            aria-label="Abrir Menu"
+            id="btn-mobile"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            Menu
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li> <a href="index.html" data-menu="HOME"> HOME</a></li>
+            <li> <a href="cep.html" data-menu="CEP">CEP-DÓLAR</a></li>
+            <li> <a href="indexAtividadeJson.html">API-FAKE</a></li>
+            <li> <a href="indexApiJson.html">API-JSON</a></li>
+            <li>   <a href="indexFormulario.html">API-FORM</a></li>
+            <li> <a href="indexClima.html">API-CLIMA</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+    <h1>E-Commerce Fake-API</h1>
+
+    <p>Essa página está consumindo uma API baseada em um arquivo .JSON</p>
+
+
+    <main>
+
+  
+
+
+    <div class="linha2">
+
+    
+
+    </div>
+
+    <div class="todos">
+
+        <div class="card">
+
+            
+        <div class="um">
+
+            <div id="imagem"></div>
+            <div id="nome"></div>
+            <div id="disco"></div>
+            <div id="estilo"></div>
+            <div id="preco"></div>
+
+        </div>
+            
+          </div>
+
+
+       
+
+          <div class="card">
+
+            <div class="dois">
+
+                <div id="imagem2"></div>
+                <div id="nome2"></div>
+                <div id="disco2"></div>
+                <div id="estilo2"></div>
+                <div id="preco2"></div>
+            
+            </div>
+           
+          </div>
+
+
+
+<div class="card">
+    <div class="tres">
+
+        <div id="imagem3"></div>
+        <div id="nome3"></div>
+        <div id="disco3"></div>
+        <div id="estilo3"></div>
+        <div id="preco3"></div>
+  </div>
+   
+
+
+
+</div>
+   
+    </div>
+    
+
+
+    
+  <div class="linha">
+
+    
+
+  </div>
+</main>
+
+    <script src="script/scriptApiJson.js">
+
+    </script>
+
+
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+      
+      function toggleMenu(event) {
+         if (event.type === 'touchstart') event.preventDefault();
+         const nav = document.getElementById('nav');
+         nav.classList.toggle('active');
+         const active = nav.classList.contains('active');
+         event.currentTarget.setAttribute('aria-expanded', active);
+         if (active) {
+            event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+         } else {
+            event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+         }
+      }
+      
+      btnMobile.addEventListener('click', toggleMenu);
+       btnMobile.addEventListener('touchstart', toggleMenu);
+      </script>
+    
+</body>
+</html>
